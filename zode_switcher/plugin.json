@@ -1,0 +1,23 @@
+{
+  "id": "zode_switcher",
+  "name": "ZODE 切换器",
+  "summary": "一键切换代码源到 idk500 增强源（CNB，ZODE 分支），配置后重启生效。",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "defaultGroup": false,
+  "needNotify": false,
+  "author": {
+    "name": "idk500",
+    "url": "https://github.com/idk500"
+  },
+  "homepage": "https://github.com/idk500/zzzod-plugin-zode-switcher",
+  "risk": [
+    "filesystem"
+  ],
+  "compatibility": {
+    "minAppVersion": "0.0.0",
+    "minCoreApiVersion": 1,
+    "python": ">=3.11"
+  },
+  "apps": []
+}
