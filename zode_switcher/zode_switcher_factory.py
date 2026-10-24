@@ -10,6 +10,7 @@ from typing import TYPE_CHECKING
 from one_dragon.base.operation.application.application_factory import ApplicationFactory
 
 from . import zode_switcher_const
+from .zode_switcher_config import ZodeSwitcherConfig
 
 if TYPE_CHECKING:
     from zzz_od.context.zzz_context import ZContext
@@ -26,3 +27,6 @@ class ZodeSwitcherFactory(ApplicationFactory):
         from .zode_switcher import ZodeSwitcherApp
 
         return ZodeSwitcherApp(self.ctx)
+
+    def create_config(self, instance_idx: int, group_id: str):
+        return ZodeSwitcherConfig(instance_idx=instance_idx, group_id=group_id)
